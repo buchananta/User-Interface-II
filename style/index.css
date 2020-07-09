@@ -24,7 +24,7 @@ time, mark, audio, video {
 	font: inherit;
   vertical-align: baseline;
 }
-header {
+header, footer {
   color: #E2E2E2;
   background-color: #384D48;
   border-bottom: solid black .1rem;
@@ -63,12 +63,12 @@ nav {
 }
 
 section {
-  margin: 1%;
+  margin: 2%;
 }
 
 .title {
   display: flex;
-  margin: 1%;
+
 }
 
 .intro {
@@ -92,4 +92,35 @@ h2 {
 
 .intro a {
   margin: 1.5rem 0;
+}
+
+.projects {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+img {
+  margin: 0;
+  width: 100%;
+}
+
+figure {
+  color: #384D48;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+footer {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+
+footer h2 {
+  color: #E2E2E2;
+  padding-bottom: 1rem;
 }
