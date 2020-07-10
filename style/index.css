@@ -1,1 +1,153 @@
 /* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  vertical-align: baseline;
+}
+
+header, footer {
+  padding: 1rem 0;
+  color: #E2E2E2;
+  background-color: #384D48;
+  border-bottom: solid black .1rem;
+}
+
+h1 {
+  margin: 0;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 4rem;
+  padding: 0 1rem;
+  letter-spacing: .4rem;
+}
+
+a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-align: center;
+  color: #384D48;
+  background-color: #E2E2E2;
+  padding: .5rem 1rem;
+  margin: 0;
+}
+
+a:hover {
+  color:  #E2E2E2;
+  background-color: #6E7271;
+  transition: .3s;
+}
+
+#current-page {
+  color:  #E2E2E2;
+  background-color: #6E7271;
+}
+
+nav {
+  padding: 0 8% 2%;
+  display: flex;
+}
+
+section {
+  margin: 2%;
+}
+
+.title {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.title img {
+  flex-grow: 0;
+}
+
+.intro {
+  max-width: 600px;
+  min-width: 0;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  margin: 4% 0 0 6%;
+}
+
+p {
+  color: #384D48;
+  text-align: justified;
+}
+
+h2 {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  color: #384D48;
+  font-size: 3rem;
+  margin: .5rem 0;
+}
+
+.intro a {
+  margin: 1.5rem 0;
+}
+
+.projects {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+img {
+  margin: 0;
+  width: 100%;
+}
+
+figure {
+  color: #384D48;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+footer {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+footer h2 {
+  color: #E2E2E2;
+  padding-bottom: 1rem;
+}
+
+.social {
+  margin-top: 1rem;
+}
+
+.social a {
+  font-size: 3rem;
+  color: #E2E2E2;
+  background-color: #384D48;
+  text-align: center;
+}
+
+.social a:hover {
+  color: #6E7271;
+  transition: .3s;
+}
