@@ -174,7 +174,7 @@ footer h2 {
     background-size: cover;
   }
   /*make stuff infront of the image more visible*/
-  .title p, a {
+  .title p, .title a {
     border: 2px solid black;
     background-color: #e2e2e2;
     color: black;
@@ -186,8 +186,9 @@ footer h2 {
 }
 
 @media(max-width: 500px) {
-  /* hide the paragraph, and center everything*/
+  /* hide the paragraph, footer title, and center everything*/
   .title p { display: none }
+  footer h2 { display: none }
   .intro { 
     text-align: center;
     align-items: center;
