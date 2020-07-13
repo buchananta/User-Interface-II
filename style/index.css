@@ -24,6 +24,11 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
   vertical-align: baseline;
+
+}
+
+html {
+  box-sizing: border-box;
 }
 
 header, footer {
@@ -175,5 +180,29 @@ footer h2 {
   }
   .title p {
     padding: 1em .5em;
+  }
+}
+
+@media(max-width: 500px) {
+  /* hide the paragraph, and center everything*/
+  .title p { display: none }
+  .intro { 
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh;
+  }
+  /*fix navigation, make h1 smaller
+    really wish I could add a hamburger menu*/
+  header {
+    text-align: center;
+  }
+  h1 {
+    font-size: 2em;
+    margin: 1em 0;
+  }
+  nav {
+    flex-flow: column;
+    align-items: center;
   }
 }
