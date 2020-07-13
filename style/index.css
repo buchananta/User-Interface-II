@@ -208,6 +208,9 @@ footer h2 {
     flex-flow: column;
     align-items: center;
   }
+  nav a {
+    width: 8em;
+  }
   /*I managed to make the projects flex pretty properly.
     But I think they'll look better with no left or
     right margin at this level*/
