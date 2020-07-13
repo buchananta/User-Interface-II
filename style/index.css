@@ -115,7 +115,7 @@ h2 {
 .projects {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 img {
@@ -127,7 +127,9 @@ figure {
   color: #384D48;
   text-align: center;
   font-size: 1.2rem;
-  margin: 1rem 0;
+  margin: 1rem 1rem;
+  flex: 1 1 201px;
+  max-width: 300px;
 }
 
 footer {
@@ -204,5 +206,13 @@ footer h2 {
   nav {
     flex-flow: column;
     align-items: center;
+  }
+  /*I managed to make the projects flex pretty properly.
+    But I think they'll look better with no left or
+    right margin at this level*/
+  figure { 
+    margin: 1rem 0;
+    flex: 1 1 500px;
+    max-width: 100%;
   }
 }
