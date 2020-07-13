@@ -93,6 +93,7 @@ section {
 p {
   color: #384D48;
   text-align: justified;
+  max-width: 90%;
 }
 
 h2 {
@@ -150,4 +151,29 @@ footer h2 {
 .social a:hover {
   color: #6E7271;
   transition: .3s;
+}
+
+/* media queries */
+@media(max-width: 800px) {
+  /*get rid of html image, and embed in background*/
+  .title img {
+    display: none;
+  }
+  .title {
+    flex-flow: column;
+    opacity: 70%;
+    background-image: url("https://picsum.photos/id/1084/536/354");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /*make stuff infront of the image more visible*/
+  .title p, a {
+    border: 2px solid black;
+    background-color: #e2e2e2;
+    color: black;
+    opacity: 90%;
+  }
+  .title p {
+    padding: 1em .5em;
+  }
 }
