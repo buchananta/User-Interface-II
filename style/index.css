@@ -24,6 +24,11 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
   vertical-align: baseline;
+
+}
+
+html {
+  box-sizing: border-box;
 }
 
 header, footer {
@@ -93,6 +98,7 @@ section {
 p {
   color: #384D48;
   text-align: justified;
+  max-width: 90%;
 }
 
 h2 {
@@ -109,7 +115,7 @@ h2 {
 .projects {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 img {
@@ -121,7 +127,9 @@ figure {
   color: #384D48;
   text-align: center;
   font-size: 1.2rem;
-  margin: 1rem 0;
+  margin: 1rem 1rem;
+  flex: 1 1 201px;
+  max-width: 300px;
 }
 
 footer {
@@ -150,4 +158,65 @@ footer h2 {
 .social a:hover {
   color: #6E7271;
   transition: .3s;
+}
+
+/* media queries */
+@media(max-width: 800px) {
+  /*get rid of html image, and embed in background*/
+  .title img {
+    display: none;
+  }
+  .title {
+    flex-flow: column;
+    opacity: 70%;
+    background-image: url("https://picsum.photos/id/1084/536/354");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /*make stuff infront of the image more visible*/
+  .title p, .title a {
+    border: 2px solid black;
+    background-color: #e2e2e2;
+    color: black;
+    opacity: 90%;
+  }
+  .title p {
+    padding: 1em .5em;
+  }
+}
+
+@media(max-width: 500px) {
+  /* hide the paragraph, footer title, and center everything*/
+  .title p { display: none }
+  footer h2 { display: none }
+  .intro { 
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh;
+  }
+  /*fix navigation, make h1 smaller
+    really wish I could add a hamburger menu*/
+  header {
+    text-align: center;
+  }
+  h1 {
+    font-size: 2em;
+    margin: 1em 0;
+  }
+  nav {
+    flex-flow: column;
+    align-items: center;
+  }
+  nav a {
+    width: 8em;
+  }
+  /*I managed to make the projects flex pretty properly.
+    But I think they'll look better with no left or
+    right margin at this level*/
+  figure { 
+    margin: 1rem 0;
+    flex: 1 1 500px;
+    max-width: 100%;
+  }
 }
